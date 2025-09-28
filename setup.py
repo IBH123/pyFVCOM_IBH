@@ -19,17 +19,17 @@ def get_version():
             for line in f:
                 if line.startswith('__version__'):
                     return line.split('=')[1].strip().strip('"\'')
-    return "2.2.0-fixed"
+    return "2.2.0.post1"
 
 setup(
-    name="PyFVCOM-fixed",
+    name="PyFVCOM",
     version=get_version(),
     author="PyFVCOM Contributors (Fixed Version)",
     author_email="your-email@example.com",
     description="PyFVCOM with critical bug fixes for modern Python environments",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/pyFVCOM",
+    url="https://github.com/IBH123/pyFVCOM_IBH",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
